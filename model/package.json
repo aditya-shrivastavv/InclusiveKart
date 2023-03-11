@@ -1,0 +1,15 @@
+{
+  "name": "model",
+  "version": "1.0.0",
+  "description": "website model for InclusiveKart e-commerce",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwind -i ./src/input.css -o ./src/css/main.css",
+    "watch": "tailwind -i ./src/input.css -o ./src/css/main.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.2.7"
+  }
+}

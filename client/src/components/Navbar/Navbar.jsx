@@ -1,4 +1,5 @@
 import logo from "./assets/logo.svg";
+import NavCategories from "./NavCategories";
 
 function Navbar() {
   return (
@@ -39,6 +40,7 @@ function Navbar() {
           </div>
         </div>
       </nav>
+      <NavCategories />
     </header>
   );
 }

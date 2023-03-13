@@ -1,9 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       colors: {
@@ -16,7 +13,7 @@ module.exports = {
           600: "#cc0d19",
           700: "#990a13",
           800: "#66060c",
-          900: "#330306"
+          900: "#330306",
         },
         gray: {
           100: "#f4f1f4",
@@ -27,7 +24,7 @@ module.exports = {
           600: "#a295a0",
           700: "#797078",
           800: "#514a50",
-          900: "#282528"
+          900: "#282528",
         },
         ukrainian: {
           100: "#f0f8fd",
@@ -38,7 +35,7 @@ module.exports = {
           600: "#8eb1c6",
           700: "#6b8594",
           800: "#475863",
-          900: "#242c31"
+          900: "#242c31",
         },
         teal: {
           100: "#dbf0ef",
@@ -49,10 +46,10 @@ module.exports = {
           600: "#3d918b",
           700: "#2e6d68",
           800: "#1e4846",
-          900: "#0f2423"
+          900: "#0f2423",
         },
-      }
+      },
     },
   },
   plugins: [],
-}
+};

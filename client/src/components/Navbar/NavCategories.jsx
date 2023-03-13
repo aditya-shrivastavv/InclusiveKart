@@ -15,6 +15,7 @@ function NavCategories() {
       <div className="container mx-auto">
         <ul className="flex justify-between">
           {categories.map((category) => (
+            // eslint-disable-next-line jsx-a11y/anchor-is-valid
             <a href="#" key={categories.indexOf(category)}>
               <li>{category}</li>
             </a>

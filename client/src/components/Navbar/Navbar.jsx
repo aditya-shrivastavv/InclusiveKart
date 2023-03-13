@@ -1,7 +1,4 @@
-import { Link } from "react-router-dom";
-
 import logo from "./assets/logo.svg";
-import NavCategories from "./NavCategories";
 
 function Navbar() {
   return (
@@ -10,7 +7,7 @@ function Navbar() {
         <div className="container mx-auto flex justify-end items-center text-gray-100 ">
           {/* Logo */}
           <a className="flex items-center space-x-2 mr-8" href="/">
-            <img src={logo} className="w-10" />
+            <img src={logo} className="w-10" alt="logo" />
             <h1 className="text-2xl">InclusiveKart</h1>
           </a>
 
@@ -27,10 +24,12 @@ function Navbar() {
 
           {/* Profile and Cart */}
           <div className="flex space-x-6">
+            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
             <a className="flex flex-col items-center" href="#">
               <span className="material-symbols-sharp text-xl">person</span>
               <p className="text-xs -m-0.5">Profile</p>
             </a>
+            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
             <a className="flex flex-col items-center" href="#">
               <span className="material-symbols-sharp text-xl">
                 shopping_cart
@@ -40,7 +39,6 @@ function Navbar() {
           </div>
         </div>
       </nav>
-      <NavCategories />
     </header>
   );
 }

@@ -1,17 +1,17 @@
-function NavCategories() {
-  const categories = [
-    "Luxury Beauty",
-    "Luxury Skin Care",
-    "Luxury Nail Care",
-    "Luxury Fragrance",
-    "Luxury Hair Care & Styling",
-    "Luxury Men's Grooming",
-    "All Luxury Brands",
-    "All Beauty",
-  ];
+const categories = [
+  "Luxury Beauty",
+  "Luxury Skin Care",
+  "Luxury Nail Care",
+  "Luxury Fragrance",
+  "Luxury Hair Care & Styling",
+  "Luxury Men's Grooming",
+  "All Luxury Brands",
+  "All Beauty",
+];
 
+function CategoryBar() {
   return (
-    <div className="bg-gray-700 text-xs text-gray-100 py-2 border-b-4 border-gray-800">
+    <div className=" bg-slate-400 text-xs text-gray-900 font-bold py-2 border-y-4 border-gray-800">
       <div className="container mx-auto">
         <ul className="flex justify-between">
           {categories.map((category) => (
@@ -26,4 +26,4 @@ function NavCategories() {
   );
 }
 
-export default NavCategories;
+export default CategoryBar;

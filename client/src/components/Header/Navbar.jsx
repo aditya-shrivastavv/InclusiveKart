@@ -1,10 +1,12 @@
+import { NavLink } from "react-router-dom";
+
 import logo from "./assets/logo.svg";
-import NavCategories from "./NavCategories";
+import CategoryBar from "./CategoryBar";
 
 function Navbar() {
   return (
     <header>
-      <nav className="bg-red-500 p-3 border-b-4 border-gray-800">
+      <nav className="bg-red-500 p-3">
         <div className="container mx-auto flex justify-end items-center text-gray-100 ">
           {/* Logo */}
           <a className="flex items-center space-x-2 mr-8" href="/">
@@ -26,10 +28,10 @@ function Navbar() {
           {/* Profile and Cart */}
           <div className="flex space-x-6">
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-            <a className="flex flex-col items-center" href="#">
+            <NavLink className="flex flex-col items-center" to="#">
               <span className="material-symbols-sharp text-xl">person</span>
               <p className="text-xs -m-0.5">Profile</p>
-            </a>
+            </NavLink>
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
             <a className="flex flex-col items-center" href="#">
               <span className="material-symbols-sharp text-xl">
@@ -40,7 +42,7 @@ function Navbar() {
           </div>
         </div>
       </nav>
-      <NavCategories />
+      <CategoryBar />
     </header>
   );
 }

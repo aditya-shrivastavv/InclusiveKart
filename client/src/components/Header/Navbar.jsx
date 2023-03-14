@@ -1,6 +1,5 @@
 import { NavLink } from "react-router-dom";
 
-import logo from "./assets/logo.svg";
 import CategoryBar from "./CategoryBar";
 
 function Navbar() {
@@ -10,7 +9,11 @@ function Navbar() {
         <div className="container mx-auto flex justify-end items-center text-gray-100 ">
           {/* Logo */}
           <a className="flex items-center space-x-2 mr-8" href="/">
-            <img src={logo} className="w-10" alt="logo" />
+            <img
+              src="../../../public/assets/logo.svg"
+              className="w-10"
+              alt="logo"
+            />
             <h1 className="text-2xl">InclusiveKart</h1>
           </a>
 

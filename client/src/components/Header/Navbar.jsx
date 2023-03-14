@@ -5,7 +5,7 @@ import CategoryBar from "./CategoryBar";
 function Navbar() {
   return (
     <header>
-      <nav className="bg-red-500 p-3">
+      <nav className=" bg-blackBlue py-6">
         <div className="container mx-auto flex justify-end items-center text-gray-100 ">
           {/* Logo */}
           <a className="flex items-center space-x-2 mr-8" href="/">
@@ -14,7 +14,7 @@ function Navbar() {
               className="w-10"
               alt="logo"
             />
-            <h1 className="text-2xl">InclusiveKart</h1>
+            <h1 className="text-4xl">InclusiveKart</h1>
           </a>
 
           {/* Search Bar */}

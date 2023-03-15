@@ -9,7 +9,7 @@ feature-full for people with disability.
 
 - React
   - React Router
-- Tailwind CSS
+- Tailwind CSS + PostCSS
 - ViteJS
 
 ### Linting and Formating
